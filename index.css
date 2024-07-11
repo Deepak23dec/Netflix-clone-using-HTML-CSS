@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: black;
+}
+.main {
+  background-image: url(assest/image/bg.jpg);
+  height: 100vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: max(1390px, 100vh);
+  position: relative;
+}
+.box {
+  background-color: black;
+  height: 100vh;
+  width: 100%;
+  opacity: 0.44;
+  position: absolute;
+  top: 0;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  max-width: 75%;
+  padding-top: 20px;
+  height: 62px;
+}
+nav img {
+  width: 154px;
+  position: relative;
+  z-index: 10;
+  color: #750e0e5e;
+}
+.engsi{
+  display: flex;
+  gap: 10px;
+  position: relative;
+  z-index: 10;
+  
+}
+.engsi :first-child{
+  font-size: 24px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.63);
+  border: solid rgba(0, 0, 0, 0.863) 1px;
+  border-radius: 5px;
+padding: 0px 20px; 
+}
+.engsi :nth-child(2){
+  background-color: rgb(150, 16, 16);
+  border: solid rgb(150, 16, 16) 1px;
+  border-radius: 5px;
+color: white;
+padding: 0px 10px;}
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  color: white;
+  flex-direction: column;
+  position: relative;
+  z-index: 20;
+  gap: 23px;
+  padding: 30px;
+}
+.hero > :first-child {
+  font-size: 48px;
+  font-weight: 400;
+  text-align: center;
+}
+.hero > :nth-child(2) {
+  font-size: 26px;
+  font-weight: 400;
+  text-align: center;
+}
+.hero > :nth-child(3) {
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+.sapration {
+  background-color: rgba(51, 51, 51, 0.514);
+  height: 7px;
+}
+.inbt {
+  display: flex;
+  gap: 15px;
+}
+::placeholder{
+  color: white;
+}
+.hero input {
+  background-color: rgba(27, 27, 27, 0.856);
+  border: solid rgb(105, 105, 105) 1px;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 7.5px 55px 7.5px 10px;
+}
+.hero button {
+  background-color: rgb(150, 16, 16);
+  border: solid rgb(150, 16, 16) 1px;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-size: 20px;
+  font-weight: 400;
+}
+.first{
+  display: flex;
+  justify-content: center;
+  max-width: 70vw;
+  margin: auto;
+  color: white;
+  align-items: center;
+  padding: 20px;
+}
+@media screen and (max-width: 1200px){
+.first{
+  flex-wrap: wrap;
+}
+}
+  
+
+.secimg{
+  position: relative;
+}
+.secimg img{
+  width: 555px;
+  position: relative;
+  z-index: 10; 
+}
+.secimg video{
+  position: absolute;
+  right: 0;
+  top: 80px;
+  width: 490px;
+}
+section.first > div{
+  display: flex;
+ padding: 34px 0;
+  flex-direction: column;
+}
+.first >div :first-child{
+  font-size: 48px;
+  font-weight: 400;
+}
+  .first >div :nth-child(2){
+    font-size: 24px;
+  }
