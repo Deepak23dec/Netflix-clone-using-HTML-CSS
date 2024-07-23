@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
 }
-body{
+body {
   background-color: black;
 }
 .main {
@@ -10,14 +10,14 @@ body{
   height: 100vh;
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: max(1390px, 100vh);
+  background-size: max(1500px 100vw);
   position: relative;
 }
 .box {
   background-color: black;
   height: 100vh;
   width: 100%;
-  opacity: 0.44;
+  opacity: 0.54;
   position: absolute;
   top: 0;
 }
@@ -36,51 +36,51 @@ nav img {
   z-index: 10;
   color: #750e0e5e;
 }
-.engsi{
+.engsi {
   display: flex;
   gap: 10px;
   position: relative;
   z-index: 10;
-  
 }
-.engsi :first-child{
+.engsi :first-child {
   font-size: 24px;
   color: white;
   background-color: rgba(0, 0, 0, 0.63);
   border: solid rgba(0, 0, 0, 0.863) 1px;
   border-radius: 5px;
-padding: 0px 20px; 
+  padding: 0px 20px;
 }
-.engsi :nth-child(2){
+.engsi :nth-child(2) {
   background-color: rgb(150, 16, 16);
   border: solid rgb(150, 16, 16) 1px;
   border-radius: 5px;
-color: white;
-padding: 0px 10px;}
+  color: white;
+  padding: 0px 10px;
+}
 .hero {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80%;
+  height: 90%;
   color: white;
   flex-direction: column;
   position: relative;
   z-index: 20;
-  gap: 23px;
+  gap: 25px;
   padding: 30px;
 }
 .hero > :first-child {
-  font-size: 48px;
+  font-size: 54px;
   font-weight: 400;
   text-align: center;
 }
 .hero > :nth-child(2) {
-  font-size: 26px;
+  font-size: 34px;
   font-weight: 400;
   text-align: center;
 }
 .hero > :nth-child(3) {
-  font-size: 24px;
+  font-size: 26px;
   font-weight: 400;
   text-align: center;
 }
@@ -92,17 +92,18 @@ padding: 0px 10px;}
   display: flex;
   gap: 15px;
 }
-::placeholder{
+::placeholder {
   color: white;
 }
-.hero input {
+.inbt input {
   background-color: rgba(27, 27, 27, 0.856);
   border: solid rgb(105, 105, 105) 1px;
   border-radius: 5px;
   font-size: 18px;
   padding: 7.5px 55px 7.5px 10px;
 }
-.hero button {
+
+.inbt button {
   background-color: rgb(150, 16, 16);
   border: solid rgb(150, 16, 16) 1px;
   border-radius: 5px;
@@ -110,45 +111,171 @@ padding: 0px 10px;}
   font-size: 20px;
   font-weight: 400;
 }
-.first{
+
+.first {
   display: flex;
   justify-content: center;
-  max-width: 70vw;
+  max-width: 80vw;
   margin: auto;
   color: white;
   align-items: center;
   padding: 20px;
 }
-@media screen and (max-width: 1200px){
-.first{
-  flex-wrap: wrap;
-}
-}
-  
 
-.secimg{
+.secimg {
   position: relative;
 }
-.secimg img{
+.secimg img {
   width: 555px;
   position: relative;
-  z-index: 10; 
+  z-index: 10;
 }
-.secimg video{
+.secimg video {
   position: absolute;
   right: 0;
   top: 80px;
   width: 490px;
 }
-section.first > div{
+section.first > div {
   display: flex;
- padding: 34px 0;
+  padding: 34px 0;
   flex-direction: column;
 }
-.first >div :first-child{
+.first > div :first-child {
   font-size: 48px;
   font-weight: 400;
 }
-  .first >div :nth-child(2){
+.first > div :nth-child(2) {
+  font-size: 24px;
+}
+.faq {
+  background-color: black;
+  color: white;
+  padding: 34px;
+}
+.faqbox svg {
+  filter: invert(1);
+}
+.faq h2 {
+  text-align: center;
+  font-size: 48px;
+}
+.faqbox:hover {
+  background-color: #414141;
+}
+.faqbox {
+  transition: all 0.1s ease-in-out;
+  font-size: 24px;
+  display: flex;
+  background-color: #2d2d2d;
+  padding: 24px;
+  max-width: 60vw;
+  margin: 15px auto;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.ready {
+  display: flex;
+  flex-direction: column;
+  max-width: 60vw;
+  text-align: center;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0px;
+}
+.ready p {
+  font-size: 28px;
+  padding: 20px 0px;
+}
+footer {
+  color: white;
+  max-width: 60vw;
+  margin: auto;
+  padding: 14px;
+}
+footer div {
+  padding: 14px 0px;
+}
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  color: white;
+}
+@media screen and (max-width: 750px) {
+  .footer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.footer a {
+  text-decoration: underline;
+  color: white;
+  font-size: 14px;
+}
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+@media screen and (max-width: 1200px) {
+  .first {
+    flex-wrap: wrap;
+  }
+  .inbt {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  .inbt :nth-child(2) {
+    padding: 5px 10px;
+    font-size: 20px;
+    max-width: 50vw;
+    margin: auto;
+  }
+  .secimg img {
+    width: 300px;
+  }
+  .secimg video {
+    width: 280px;
+  }
+  .logo {
+    width: 90px;
+    font-weight: 800;
+  }
+  nav {
+    max-width: 90vw;
+  }
+  .main {
+    height: 80vh;
+  }
+  .box {
+    opacity: 0.75;
+    height: 80vh;
+  }
+  .hero {
+    height: 70%;
+  }
+  .hero > :first-child {
+    font-size: 38px;
+  }
+  .hero > :nth-child(2) {
     font-size: 24px;
   }
+  .hero > :nth-child(3) {
+    font-size: 20px;
+  }
+  .first {
+    width: 60vw;
+    text-align: center;
+  }
+  .first > div :first-child {
+    font-size: 28px;
+  }
+  .first > div :nth-child(2) {
+    font-size: 16px;
+  }
+  .ready p {
+    font-size: 16px;
+    padding: 20px 0px;
+  }
+}
